@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "sourceMap": true,
+        "outDir": "dist",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "paths": {
+            "@DTO/*": ["entities/DTO/*"],
+            "@services/*": ["services/*"],
+            "@errors/*": ["errors/*"],
+            "@injection/*": ["injection/*"],
+            "@controllers/*": ["controllers/*"],
+            "@repositories/*": ["repositories/*"],
+            "@lib/*": ["lib/*"],
+            "@routers/*": ["routers/*"],
+            "@mappers/*": ["entities/mappers/*"],
+            "@sequelize-models/*": ["entities/sequelize-models/*"],
+            "@sequelize-conn": ["sequelize-conn"],
+            "@s3-conn": ["s3-conn"]
+        }
+    },
+    "lib": ["es2015"]
+}
